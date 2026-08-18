@@ -226,11 +226,11 @@ body {
   display: flex;
   align-items: center; /* Vertically centers the buttons and pill inside the 36px outline */
   
-  /* ðŸ› ï¸ OUTLINE CONTAINER DIMENSIONS */
+  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â OUTLINE CONTAINER DIMENSIONS */
   width: 341px; 
   height: 36px; 
   
-  /* ðŸ› ï¸ 36px GAP FROM CONTENT ABOVE */
+  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â 36px GAP FROM CONTENT ABOVE */
   margin: 36px auto 0 20px; /* 36px top gap, auto right, 0 bottom, 20px left margin */
   
   background: #ffffff;
@@ -243,7 +243,7 @@ body {
 .segmented .slider-pill {
   position: absolute;
   
-  /* ðŸ› ï¸ SLIDER PILL DIMENSIONS */
+  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â SLIDER PILL DIMENSIONS */
   width: 113px !important; 
   height: 33px !important;
   
@@ -265,7 +265,7 @@ body {
   align-items: center;
   justify-content: center;
   
-  /* ðŸ› ï¸ INDIVIDUAL TOGGLE BUTTON DIMENSIONS */
+  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â INDIVIDUAL TOGGLE BUTTON DIMENSIONS */
   width: 113px; 
   height: 36px; 
   
@@ -635,7 +635,7 @@ h3 {
 .qr-hotspot{
   position: absolute;
 
-  /* ðŸ‘‡ move these until it sits on top of the screenshot button */
+  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ËœÃ¢â‚¬Â¡ move these until it sits on top of the screenshot button */
   left: 58.5%;
   top: 72%;
   width: 32%;
@@ -810,11 +810,11 @@ h3 {
 #homepage .licence-btn {
   width: calc(100% - 32px);
   max-width: 390px;
-  height: auto; /* keep this â€” never change it */
+  height: auto; /* keep this ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â never change it */
   border-radius: 5px;
   box-shadow: 0 25px 50px rgba(0,0,0,0.2);
   transition: transform 0.1s ease-in-out;
-  transform: translateY(40px); /* move image down â€” adjust px until nav disappears */
+  transform: translateY(40px); /* move image down ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adjust px until nav disappears */
 }
 
 #homepage.licence-btn:active {
@@ -855,7 +855,7 @@ h3 {
   height: 36px;
   object-fit: contain;
   display: block;
-  margin-top: 0;
+  margin-top: 20px;
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, margin-top 0.3s ease;
   transform-origin: center center;
   flex-shrink: 0;
@@ -889,7 +889,7 @@ h3 {
 .nav-link[data-page="homepage"].active span {
   color: #1b5e35;
   font-weight: 700;
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 
@@ -916,7 +916,7 @@ h3 {
 .nav-link[data-page="vehicles"].active span {
   color: #1b5e35;
   font-weight: 700;
-  margin-top: 6px;
+  margin-top: 13px;
 }
 
 
@@ -926,7 +926,7 @@ h3 {
 .nav-link[data-page="licence-landing"] .nav-icon {
   width: 23.5px;
   height: 15.5px;
-  margin-top: 15.5px;   /* add px â€” adjust value to taste */
+  margin-top: 15px;   /* add px ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adjust value to taste */
 }
 
 .nav-link[data-page="licence-landing"] span {
@@ -942,7 +942,7 @@ h3 {
 .nav-link[data-page="licence-landing"].active span {
   color: #1b5e35;
   font-weight: 700;
-  margin-top: 14px;
+  margin-top: 15px;
 }
 
 
@@ -959,15 +959,15 @@ h3 {
 }
 
 .nav-link[data-page="payment"].active .nav-icon {
-  width: 21.5px;
-  height: 21.5px;
-  margin-top: 13.5px; 
+  width: 34px;
+  height: 25px;
+  margin-top: 12px; 
 }
 
 .nav-link[data-page="payment"].active span {
   color: #1b5e35;
   font-weight: 700;
-  margin-top: 7px;
+  margin-top: 9.5px;
 }
 
 
@@ -2092,12 +2092,16 @@ h3 {
 .nav-link {
   position: relative;
   z-index: 1;
+  flex: 1 1 0;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 9px;
-  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #666;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .nav-link[data-page="licence-landing"] .nav-icon {
@@ -2127,7 +2131,7 @@ h3 {
   margin: 0 auto;
   max-height: 844px;
   background: #fff;
-  margin-top: 40px;   /* â† add this line */
+  margin-top: 40px;   /* ÃƒÂ¢Ã¢â‚¬Â Ã‚Â add this line */
 }
 
     /* top bar */
